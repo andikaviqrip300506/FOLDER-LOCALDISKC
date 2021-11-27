@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <center>   <h1>Konversi Waktu</h1> </center>
+    <script type="text/javascript">
+        function proses(){
+     var x;
+     x = parseInt(document.getElementById("lbldtk").value);
+      var hari;
+      var jam;
+      var menit;
+ y = x % 3600;
+hari = x / 86400;
+jam   = x / 3600;
+menit = y / 60;
+detik = y % 60;
+    
+    result.innerHTML = Math.floor(hari) + 'Hari' + Math.floor(jam) + ' Jam ' + Math.floor(menit) + ' Menit ';
+        }
+        function reset(){
+                document.getElementById("lbldetk").value = "";
+                document.getElementById("result").innerHTML = "Masukan Kembali";
+            }
+        </script>
+</head>
+<body bgcolor="grey"> 
+    <script>
+        alert('Konversi Waktu')
+    </script>
+    <center>
+        <label><b>Input</b></label>
+        
+        <input id="lbldtk" type="number" placeholder="Masukkan Detik"
+        <label><b>Detik</b></label>
+        <p>
+        <input type="button" value="proses" onclick="proses()">
+        <p>
+        <label><b>Hasil :</b></label>
+        <p>
+        <label id="result"></label>
+        <p>
+        </center>
+</body>
+</html>
