@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Masukkan Nilai Anda");
+        document.write ("<p>Nilai Anda Adalah</p>" + nilai)
+        
+    
+
+        if(nilai >= 90) grade = "<h2>A</h2>"
+        else if(nilai >= 80) grade ="<h2>B</h2>"
+        else if(nilai >= 70) grade ="<h2>C</h2>"
+        else if(nilai >= 60) grade ="<h2>D</h2>"
+        else if(nilai >= 50) grade ="<h2>E</h2>"
+        else if(nilai >= 0) grade ="<h2>F</h2>"
+        
+
+        document.write (`<p>Grade Anda Adalah :` + grade)
+        
+        
+
+    </script>
+</body>
+</html>
